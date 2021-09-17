@@ -37,7 +37,7 @@ The "Init.sh" script under regional_workflow will create correct links based on 
 
 Modifying binary/large fix files is infrequent. Esitmated 2 or 3 times per year.
 
-Follow the folloing steps:   
+Follow the following steps:   
 
 1. put the binary/large file under FIX_RRFS/ on Jet using the rtrr role account       
 &emsp;&emsp;for example:  FIX_RRFS/gsi/berror.rrfs_tuned_20210918       
