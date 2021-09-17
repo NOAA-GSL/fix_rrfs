@@ -72,8 +72,6 @@ domain sub directory should only contain domain specific files (such as geo_em*,
 Don't use linked directory (crtm is an exception) as we cannot track individual files under a linked directory.    
 Create a corresponding directory and link files under that directory.  
   
-In operational implmentation, just use "cp" to make a hardened version    
-
 #### .agent --> a link to FIX_RRFS  
 
 <img src="https://gtmos.github.io/links/agent.png" width="500">
