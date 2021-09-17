@@ -5,7 +5,7 @@ Currently only include gsi/ &emsp;; upp/ &emsp; and &emsp; crtm/
 
 ## General view
 
-Any text fix files (less than 1.5MB) will be tracked by git like other script/config/etc files in the regional_workflow repo.
+Any text fix files (less than 1.5MB) will be tracked by git, just like script/config/etc files in the regional_workflow repo.
 
 Any binary or large text file will be tracked through a link (not the file content itself).   
 Binary/large files themselves are stored at a fixed location (**FIX_RRFS**/) and available on Jet, Hera, Orion, WCOSS in a similar setting.
