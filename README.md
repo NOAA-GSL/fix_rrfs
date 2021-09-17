@@ -15,7 +15,7 @@ FIX_RRFS Locations at differnt HPCs:
 * **Jet**: /lfs4/BMC/nrtrr/FIX_RRFS  
 * **Hera**: /scratch2/BMC/rtrr/FIX_RRFS  
 * **Orion**: /work/noaa/rtrr/FIX_RRFS  
-* **WCOSS**:   
+* **WCOSS_D**: /gpfs/hps3/emc/meso/save/Ming.Hu/FIX_RRFS
 
 
 The "Init.sh" script under regional_workflow will create correct links based on current HPC platform.      
@@ -57,10 +57,15 @@ Follow the following steps:
 2. Add a descriptive suffix to the file name so as to self-describe it as much as possible. For example:  
 &emsp;&emsp;3drtma_berror_stats_heightDepedent_20200528  
 &emsp;&emsp;fv3_akbk_65lvl_20210806   
+
+## Change the FIX_RRFS location   
+
+1. modify ush/fix_rrfs_locations.sh   
+2. `ln -snf /to/your/FIX_RRFS fix/.agent`   (this will be overwritten when Init.sh runs)   
   
 ## More ...  
 
-A preCommit git hook is installed by Init.sh. It will prevent any binary file larger than 5k and any files largeer than 1.5MB to be commited.  
+A preCommit git hook is installed by Init.sh. It will prevent any binary file larger than 5k and any files larger than 1.5MB to be commited.  
 An example:   
 &emsp;&emsp;berror.rrfs is a large or binary file and should be trackted through a link.   
 &emsp;&emsp;&nbsp;commit failed.   
