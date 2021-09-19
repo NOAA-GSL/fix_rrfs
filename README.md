@@ -58,6 +58,11 @@ Follow the following steps:
 &emsp;&emsp;3drtma_berror_stats_heightDepedent_20200528  
 &emsp;&emsp;fv3_akbk_65lvl_20210806   
 
+#### Possible situations when modifying fix files:   
+
+1.  cp: try to overwrite 'testlink', overriding mode 0444 (r--r--r--)?   
+2.  E45: 'readonly' option is set (add ! to override)                                                                        
+
 ## Change the FIX_RRFS location   
 
 1. modify ush/fix_rrfs_locations.sh   
@@ -76,6 +81,7 @@ domain sub directory should only contain domain specific files (such as geo_em*,
 
 Don't use linked directory (crtm is an exception) as we cannot track individual files under a linked directory.    
 Create a corresponding directory and link files under that directory.  
+avoid links in FIX_RRFS  (create links under regional_workflow/fix instead)   
   
 #### .agent --> a link to FIX_RRFS  
 
