@@ -1,7 +1,7 @@
 
 # fix/
 
-Currently only include gsi/ &emsp;; upp/ &emsp; and &emsp; crtm/  
+Currently includes: &emsp; gsi/ &emsp; upp/ &emsp; crtm/  &emsp; am/  &emsp; lam/
 
 ## General view
 
